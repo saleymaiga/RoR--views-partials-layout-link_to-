@@ -1,0 +1,11 @@
+<h1> Orders for the upcoming year</h1>
+  
+  <% new_order = @orders %>
+  
+  <%="Books : " + new_order[:books].to_s %> <br>
+
+  <%= "Amount : "+ "$"+ new_order[:amount].to_s %> <br>
+
+  <%= "Status : " + new_order[:status] %> <br>
+
+  Return to the profile page : <%=  link_to("Profile page", profile_path)%>
